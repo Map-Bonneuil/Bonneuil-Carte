@@ -1,0 +1,103 @@
+/*un ptit reset css*/
+html{
+    font-size: 62.5%;
+    background-color: rgb(243, 243, 243);
+}
+body{
+    font: 1.3rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,ol,ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    list-style: none;
+}
+section ul{
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+header h1{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--main-color);
+    opacity: 85%;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+}
+main{
+    background: #000 url(../asset/carte.png)no-repeat center center / cover;
+    margin: 1rem auto;
+    max-width: 130rem;
+    border-radius: 1rem;
+    height: 90vh;
+    box-shadow: 0 0 1.5rem .5rem rgba(0,0,0,0.2);
+}
+main figure img{
+    max-width: 100rem;
+    display: block;
+    margin: 0 auto;
+}
+main figure .bonn{
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 1.5rem .5rem rgba(0,0,0,0.2);
+}
+main figure .ecole-henri-arles{
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    max-width: 3rem;
+    top: 40%;
+    left: 53%;  
+}
+main figure .ecole-henri-arles:hover{
+    transform: scale(1.1);
+    top: 39%;
+    left: 53%;
+    transition: 1s;
+}
+main figure .Dars{
+    position: absolute;
+    z-index: 1;
+    top: 35%;   /*place le point sur la carte de manière vertical, plus le % augmente, plus le marqueur descendra.*/
+    left: 50%;   /*place le point sur la carte de manière horizontal, plus le % augmente, plus le marqueur ira vers la droite.*/
+    transition: 1s;
+    max-width: 3rem;
+}
+main figure .Dars:hover{
+    transform: scale(1.1);
+    top: 34%;
+    left: 50%;
+    transition: 1s;
+}
+main figure .Mairie{
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    max-width: 3rem;
+    top: 32%;
+    left: 57%;
+}
+main figure .Mairie:hover{
+    transform: scale(1.1);
+    top: 31%;
+    left: 57%;
+    transition: 1s;
+}
+:root {
+        --main-color: rgb(255, 255, 255);
+        --secondary-color: rgb(124, 17, 138);
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: var(--main-color);
+    opacity: 85%;
+    max-width: 60rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+}
